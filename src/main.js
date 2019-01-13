@@ -21,6 +21,7 @@ i18next.init({
 });
 
 function updateContent() {
+    console.log(document.getElementById('output'));
     document.getElementById('output').innerHTML = i18next.t('key');
 }
 
