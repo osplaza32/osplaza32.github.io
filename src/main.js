@@ -2,16 +2,16 @@
 
 i18next.init({
     lng: 'en',
-    debug: true,
+    debug: false,
     resources: {
         en: {
             translation: {
-                "key": "hello world"
+                "key": "hello my name is Oscar Plaza,\n I'am a backend developer and android developer,enthusiastic GIS,frontend,IoT developer \n I'am from chile,south america \n I was volunter in 'Techo-Chile' and member of JS,GO,PHP local dev community "
             }
         },
         es: {
             translation: {
-                "key": "Hola mundo"
+                "key": "Hola mi nombre es Oscar Plaza,\n backend y android desarrollador, con conocimiento en iot Gis y la capa frontend \n fui voluntario de techo chile, participo en comunidades de desarrolladores aca en chile"
             }
         }
     }
