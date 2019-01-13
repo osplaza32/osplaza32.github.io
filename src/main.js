@@ -6,7 +6,7 @@ i18next.init({
     resources: {
         en: {
             translation: {
-                "key": "hello my name is Oscar Plaza,<br/> I'am a backend developer and android developer,enthusiastic GIS,frontend,IoT developer <br/> I'am from chile,south america <br/> I was volunter in 'Techo-Chile' and member of JS,GO,PHP local dev community "
+                "key": "hello my name is Oscar Plaza,<br/> I'am a backend and android developer,enthusiastic GIS,frontend And IoT <br/> I'am from chile,south america <br/> I was volunter in 'Techo-Chile' and member of JS,GO and PHP local dev community "
             }
         },
         es: {
