@@ -13,6 +13,16 @@
     <script src="src/main.js"></script>
 </head>
 <body>
+<script src="https://unpkg.com/i18next/i18next.js"></script>
+<div style="height: 100px">
+    <button onclick="i18next.changeLanguage('en')">
+        english
+    </button>
+    <button onclick="i18next.changeLanguage('es')">
+        spanish
+    </button>
+    <div id="output" />
+</div>
 <a-scene>
     <a-entity id="rain" particle-system="preset: rain; color: #24CAFF; particleCount: 5000"></a-entity>
 
