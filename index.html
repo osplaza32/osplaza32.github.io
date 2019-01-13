@@ -10,6 +10,12 @@
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
     <script src="https://unpkg.com/aframe-extras.ocean@%5E3.5.x/dist/aframe-extras.ocean.min.js"></script>
     <script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
+    <style>
+        a-scene {
+            height: 300px;
+            width: 600px;
+        }
+    </style>
 </head>
 <body>
 <div>
@@ -26,7 +32,7 @@
     </header>
 
     <div>
-    <a-scene>
+    <a-scene embedded>
         <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
         <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
         <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
