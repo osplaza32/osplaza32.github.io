@@ -12,6 +12,9 @@ h5 { font-weight: bold; }
 .col-md-4.skills.skills-customer {
     margin-top: 3.6em;
 }
+svg {
+    max-width: 1.5em;
+}
 
 #resume-container a { color: black; text-decoration: underline; }
 
