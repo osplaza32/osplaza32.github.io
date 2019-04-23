@@ -1,48 +1,494 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <title>Oscar Plaza Guzman</title>
-    <meta name="description" content="Hello, World! - A-Frame">
-    <script src="https://unpkg.com/i18next/i18next.js"></script>
-    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-extras.ocean@%5E3.5.x/dist/aframe-extras.ocean.min.js"></script>
-    <script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
-    <style>
-        a-scene {
-            height: 300px;
-            width: 600px;
-        }
-    </style>
+    <meta name="description" content="CV-Oscar Plaza">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/main.css" />
+
 </head>
-<body>
-<div>
-    <header>
-        <div style="height: 100px;width: 100%">
-        <button onclick="i18next.changeLanguage('en')">
-            english
-        </button>
-        <button onclick="i18next.changeLanguage('es')">
-            spanish
-        </button>
-        <div id="output" />
-        </div>
-    </header>
+<div class="container">
+    <div id="resume-container" class="clearfix">
+        <!-- start of resume-->
+        <header class="header">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="resume-portfolio-pic" src="./src/foto.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="resume-name">
+                        <h1>Oscar Renato Plaza Guzmán</h1>
+                        <span>Backend Developer / Ingeniero informático</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" contact-info">
+                    <div class="col-md-4 location">
+                        <address>
+                            <i class="fa fa-map-marker"></i> Santiago, Chile
+                        </address>
+                    </div>
+                    <div class="col-md-4 email">
+                        <i class="fa fa-paper-plane"></i>
+                        <a href="mailto:[email]?subject=Mail from Oscar Resume">oscarent2@gmail.com</a>
+                    </div>
+                    <div class="col-md-4 phone">
+                        <i class="fa fa-phone"></i>
+                        <a href="tel:555-555-5555">(555)555-5555</a>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <div>
-    <a-scene embedded>
-        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-        <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-        <a-sky color="#ECECEC"></a-sky>
-    </a-scene>
-    </div>
+        <section id="summary">
+
+
+            <div class="row">
+                <div class="summary">
+                    <div class="col-md-4 summary-box">
+                        <h2>Sumario</h2>
+                        <p>Hola mi nombre es Oscar Plaza, backend y android desarrollador, con conocimiento en iot, Gis y algunos framework fronted  fui voluntario de techo chile, participo en comunidades de desarrolladores aca en chile</p>
+                    </div>
+                    <div class="col-md-4 skills">
+
+                        <h2>Habilidades</h2>
+
+                        <!-- 1 -->
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">Wordpress</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">HTML/CSS</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">Dev Ops</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">Sys Admin</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">Javascript</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 7 -->
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">PHP</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-md-4 skills skills-customer">
+                        <!-- 8 -->
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">Java/android</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">70%</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">Kotlin/Android</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%;">15%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">Git</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">GoLang</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">Python</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">Java/android</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">Java/android</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">Java/android</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">Java/android</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">Java/android</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">Java/android</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-holder row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="skill-text">Java/android</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">70%</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>
+
+
+
+
+        <section id="experience">
+
+
+
+
+            <div class="">
+                <h2>Trabajos</h2>
+                <!-- current -->
+                <div class="past-employer row">
+                    <div class="col-md-2">
+
+                        <img class="employer-img" src="http://placehold.it/100x30">
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3 class="business-name">Nombre</h3>
+                        <i>inicio Date - fin Date </i><br>
+                        <span>santiago, chile</span>
+                    </div>
+                    <div class="col-md-7 ">
+                        <h4 class="position">Title / Position</h4>
+                        <p class="short-description">Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+
+                <!-- 1 -->
+                <div class="past-employer row">
+                    <div class="col-md-2">
+
+                        <img class="employer-img" src="http://placehold.it/100x30">
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3 class="business-name">Nombre</h3>
+                        <i>inicio Date - fin Date </i><br>
+                        <span>santiago, chile</span>
+                    </div>
+                    <div class="col-md-7 ">
+                        <h4 class="position">Title / Position</h4>
+                        <p class="short-description">Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="past-employer row">
+                    <div class="col-md-2">
+
+                        <img class="employer-img" src="http://placehold.it/100x30">
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3 class="business-name">Nombre</h3>
+                        <i>inicio Date - fin Date </i><br>
+                        <span>santiago, chile</span>
+                    </div>
+                    <div class="col-md-7 ">
+                        <h4 class="position">Title / Position</h4>
+                        <p class="short-description">Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="past-employer row">
+                    <div class="col-md-2">
+
+                        <img class="employer-img" src="http://placehold.it/100x30">
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3 class="business-name">Nombre</h3>
+                        <i>inicio Date - fin Date </i><br>
+                        <span>santiago, chile</span>
+                    </div>
+                    <div class="col-md-7 ">
+                        <h4 class="position">Title / Position</h4>
+                        <p class="short-description">Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="past-employer row">
+                    <div class="col-md-2">
+
+                        <img class="employer-img" src="http://placehold.it/100x30">
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3 class="business-name">Nombre</h3>
+                        <i>inicio Date - fin Date </i><br>
+                        <span>santiago, chile</span>
+                    </div>
+                    <div class="col-md-7 ">
+                        <h4 class="position">Title / Position</h4>
+                        <p class="short-description">Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <hr>
+        </section>
+
+
+
+        <section id="education">
+            <h2>Educacion</h2>
+            <div class="past-school row">
+                <div class="col-md-4 left">
+                    <h3 class="school-name">nombre de donde</h3>
+                    <i>inidio date - fin date</i><br>
+                    <span>Lugar</span>
+                </div>
+                <div class="col-md-8 ">
+                    <h4 class="position">Que estudiaste</h4>
+                    <p class="short-description">Nulla quis lorem ut libero malesuada feugiat. Donec rutrum congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit. </p>
+                </div>
+            </div>
+            <div class="past-school row">
+                <div class="col-md-4 left">
+                    <h3 class="school-name">nombre de donde</h3>
+                    <i>inidio date - fin date</i><br>
+                    <span>Lugar</span>
+                </div>
+                <div class="col-md-8 ">
+                    <h4 class="position">Que estudiaste</h4>
+                    <p class="short-description">Nulla quis lorem ut libero malesuada feugiat. Donec rutrum congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit. </p>
+                </div>
+            </div>
+
+            <div class="past-school row">
+                <div class="col-md-4 left">
+                    <h3 class="school-name">nombre de donde</h3>
+                    <i>inidio date - fin date</i><br>
+                    <span>Lugar</span>
+                </div>
+                <div class="col-md-8 ">
+                    <h4 class="position">Que estudiaste</h4>
+                    <p class="short-description">Nulla quis lorem ut libero malesuada feugiat. Donec rutrum congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit. </p>
+                </div>
+            </div>
+
+
+
+            <hr>
+        </section>
+
+
+
+        <section id="computers">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Projectos</h5>
+                    <ul>
+                        <li>Proin eget tortor risus. Nulla porttitor accumsan tincidunt. Proin eget tortor risus.</li>
+                        <li> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</li> <li>Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li><li>Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</li>
+                        <li> Pellentesque in ipsum id orci porta dapibus. Cras ultricies ligula sed magna dictum porta.</li>
+                        <li>Nulla porttitor accumsan tincidunt. Donec sollicitudin molestie malesuada.</li>
+
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>pasa tiempos</h5>
+                    <ul>
+                        <li>Proin eget tortor risus. Nulla porttitor accumsan tincidunt. Proin eget tortor risus.</li>
+                        <li> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</li> <li>Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li><li>Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</li>
+                        <li> Pellentesque in ipsum id orci porta dapibus. Cras ultricies ligula sed magna dictum porta.</li>
+                        <li>Nulla porttitor accumsan tincidunt. Donec sollicitudin molestie malesuada.</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6">
+
+                    <h5>SOftwares</h5>
+                    <ul>
+                        <li>Proin eget tortor risus. Nulla porttitor accumsan tincidunt. Proin eget tortor risus.</li>
+                        <li> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</li> <li>Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li><li>Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</li>
+                        <li> Pellentesque in ipsum id orci porta dapibus. Cras ultricies ligula sed magna dictum porta.</li>
+                        <li>Nulla porttitor accumsan tincidunt. Donec sollicitudin molestie malesuada.</li>
+
+                    </ul>
+
+
+                </div>
+                <div class="col-md-6">
+
+                    <h5>Deportes</h5>
+                    <ul>
+                        <li>Proin eget tortor risus. Nulla porttitor accumsan tincidunt. Proin eget tortor risus.</li>
+                        <li> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</li> <li>Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li><li>Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</li>
+                        <li> Pellentesque in ipsum id orci porta dapibus. Cras ultricies ligula sed magna dictum porta.</li>
+                        <li>Nulla porttitor accumsan tincidunt. Donec sollicitudin molestie malesuada.</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>otras habilidades</h5>
+                    <ul>
+                        <li>Proin eget tortor risus. Nulla porttitor accumsan tincidunt. Proin eget tortor risus.</li>
+                        <li> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</li> <li>Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li><li>Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</li>
+                        <li> Pellentesque in ipsum id orci porta dapibus. Cras ultricies ligula sed magna dictum porta.</li>
+                        <li>Nulla porttitor accumsan tincidunt. Donec sollicitudin molestie malesuada.</li>
+
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Links a proyectos</h5>
+                    <ul>
+                        <li>Proin eget tortor risus. Nulla porttitor accumsan tincidunt. Proin eget tortor risus.</li>
+                        <li> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</li> <li>Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li><li>Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</li>
+                        <li> Pellentesque in ipsum id orci porta dapibus. Cras ultricies ligula sed magna dictum porta.</li>
+                        <li>Nulla porttitor accumsan tincidunt. Donec sollicitudin molestie malesuada.</li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <hr>
+        </section>
+
+
+
+
+
+    </div><!-- end resume -->
 </div>
-
-</body>
-<script src="src/main.js"></script>
-
 </html>
